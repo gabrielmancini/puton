@@ -1,4 +1,5 @@
-puton
-=====
+# Puton ( A Port of Futon to PouchDB )
 
-this is a futon for a pouchdb
+Puton is a Ui Admin for PouchDB.
+
+
