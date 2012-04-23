@@ -1,0 +1,3 @@
+[submodule "lib/pouchdb"]
+	path = lib/pouchdb
+	url = git://github.com/mikeal/pouchdb.git
