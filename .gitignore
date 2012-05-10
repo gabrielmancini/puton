@@ -1,2 +1,2 @@
-lib/pouchdb
+/lib/pouchdb/*alpha.js
 puton.alpha.js
