@@ -32,6 +32,12 @@
 	$(document).ready(function() {
 		$("#content").Puton( { pathPuton : '../src' } );
 	})
+	
+	new Pouch('idb://test', function(err, db) {
+	  	db.post({test:"somestuff"}, function (err, info) {
+			console.log(info);
+	    });
+	})
 </script>
 
 
