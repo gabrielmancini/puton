@@ -7,8 +7,6 @@
 		this.$el = $(el);
 		
 		this.init = function() {
-			console.log(self);
-			console.log(self.$el);
 			self.createUi();
 		}
 
@@ -67,16 +65,22 @@
 		var self = this;
 		
 		this.tpl.loadTemplates(['changes_tpl', 'config_section_tpl', 'config_top_tpl', 'confirm_tpl', 'couchapps_tpl', 'create_doc_tpl', 'database_tpl', 'database_view_tpl', 'databases_tpl', 'document_tpl', 'edit_key_tpl', 'home_tpl', 'logged_in', 'logged_in_btn', 'logged_out', 'logged_out_btn', 'replication_doc_tpl', 'replication_items', 'replication_tpl', 'tasks_tpl', 'unauthorized_tpl'], function() {
-		    console.log(self.tpl.templates);
+		    app = new AppRouter();
+				Backbone.history.start();
 		});
 	
 	};
 		
 	PutonClass.prototype.createUi = function() {
 		this.setTemplates();
-		this.$el.html('<div id="dbs">xxx</div>');
+		console.log(this.tpl.get("databases_tpl"));
+		this.$el.html(this.tpl.templates["databases_tpl"]);
 	};
  
+	PutonClass.prototype.showAllDbs = function() {
+		indexedDB.getDatabaseNames();
+	};
+
 	$.fn.Puton = function(options){
 		
 		PutonClass.prototype.option = options;

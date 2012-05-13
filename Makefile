@@ -3,7 +3,8 @@ RELEASE = alpha
 
 JS_TARGETS = \
 	lib/pouchdb/pouch.alpha.js \
-    src/puton.js 
+	lib/backbone/backbone-min.js \
+  src/puton.js 
 
 all :
 	$(MAKE) -C  lib/pouchdb/

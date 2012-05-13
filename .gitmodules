@@ -1,3 +1,6 @@
 [submodule "lib/pouchdb"]
 	path = lib/pouchdb
 	url = git://github.com/mikeal/pouchdb.git
+[submodule "lib/backbone"]
+	path = lib/backbone
+	url = git://github.com/documentcloud/backbone.git
